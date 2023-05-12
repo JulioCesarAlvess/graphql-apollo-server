@@ -15,7 +15,7 @@ export class LoginResolver {
         senha,
       });
       const result: Token = {
-        hash: response.data.token,
+        token: response.data.token,
         mensagem: "Usuário logado com sucesso",
       };
       return result;

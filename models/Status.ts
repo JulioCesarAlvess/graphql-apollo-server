@@ -1,10 +1,7 @@
 import { Field, ObjectType } from "type-graphql";
 
 @ObjectType()
-export class Token {
+export class Status {
   @Field()
-  token: string;
-
-  @Field()
-  mensagem: string;
+  status: number;
 }

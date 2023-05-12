@@ -8,10 +8,14 @@ type Mutation {
 }
 
 type Query {
-  Authentication(usuario: String!): Token!
+  Authentication(token: String!): Status!
+}
+
+type Status {
+  status: Float!
 }
 
 type Token {
-  hash: String!
   mensagem: String!
+  token: String!
 }
